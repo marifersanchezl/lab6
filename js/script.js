@@ -10,9 +10,9 @@ $("#addItemButton").on("click", function(add) {
             <button type="submit" id="deleteButton">Delete</button>
         </div>`);
 })
-
+|
 $("#list").on("click", "#checkButton", function() { 
-    $(this).parent().addClass('strike');
+    $(this).parent().toggleClass('strike');
 })
 
 $("#list").on("click", "#deleteButton", function() {
